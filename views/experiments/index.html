@@ -1,0 +1,54 @@
+<!-- TODO -->
+<!-- sheetrock example -->
+<!-- youtube example -->
+<!-- calendar example -->
+
+<html>
+
+<head>
+    <!-- // maps key : AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA -->
+    <script src="sheetrock.min.js"></script>
+</head>
+
+<body>
+    <p>Hi, how are you?</p>
+    <iframe width="400" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvQk0B3a1RIYRWCvtj7ldkLk&key=AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA" allowfullscreen></iframe>
+</body>
+<script>
+    sheetrock({
+        url: 'https://docs.google.com/spreadsheets/d/18C24pEmFTz9JhIX_8UUhHEb5GenBPtrW_6WPMP_muzM/edit#gid=0',
+        query: "select A,B,C,D,E,F",
+        callback: placeData
+    });
+
+    function placeData(error, options, response) {
+        if (error) {
+            console.log(error);
+            console.log('error');
+        } else {
+            var id_num = 0;
+            var filtered_data = response.rows.map(function(row) {
+                dat = row.cellsArray;
+                var location_dat = {
+                    id: id_num,
+                    name: dat[0],
+                    addresss: dat[1],
+                    url: dat[2],
+                    phone: dat[3],
+                    countries: dat[4],
+                    description: dat[5]
+                };
+                id_num += 1;
+                return location_dat;
+            });
+
+            //do something with filtered data.
+            //hackathons let you commit crimes - (past)Oliver Croomes
+
+            console.log(filtered_data);
+
+        }
+    }
+</script>
+
+</html>
