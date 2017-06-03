@@ -2,12 +2,13 @@
 //initialize firebase
 var firebase = require("firebase");
 var config = {
-    apiKey: "AIzaSyCk147Q-MQKikvWVIOO4shXd8C0UKiBKpA",
-    authDomain: "story-collab.firebaseapp.com",
-    databaseURL: "https://story-collab.firebaseio.com",
-    storageBucket: "story-collab.appspot.com",
-    messagingSenderId: "814622369840"
-  };
+  apiKey: "AIzaSyCZ6rmPq93DjrPafTaWayIq-adXR2QtLlg",
+  authDomain: "firststepin-1bd8e.firebaseapp.com",
+  databaseURL: "https://firststepin-1bd8e.firebaseio.com",
+  projectId: "firststepin-1bd8e",
+  storageBucket: "firststepin-1bd8e.appspot.com",
+  messagingSenderId: "193627833378"
+};
 
 firebase.initializeApp(config);
 
