@@ -1,0 +1,8 @@
+# Node modules
+node_modules
+
+.idea
+
+.sass-cache
+
+.DS_store
