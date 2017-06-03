@@ -19,7 +19,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const path = require('path');
-const auth = firebase.auth();
+// const auth = firebase.auth();
 const port = process.env.PORT || 3000;
 var provider = new firebase.auth.GoogleAuthProvider();
 // Set view engine to EJS and locate views
@@ -40,6 +40,7 @@ app.get('/favicon.ico', (request, response) => {
     .end();
 });
 app.post('/signInUser', function (req, res, next) {
+  var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider).then(function(result) {
     // This gives you a Google Access Token. You can use it to access the Google API.
     var token = result.credential.accessToken;
@@ -56,6 +57,9 @@ app.post('/signInUser', function (req, res, next) {
     var credential = error.credential;
     // ...
   });
+    res.sendStatus(200)
+    .end();
+  // res.render('index');
 });
 // Always send the index.html
 app.get('*', (request, response) => {
