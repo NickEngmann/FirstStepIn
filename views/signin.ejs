@@ -1,39 +1,6 @@
 
 <%- include('partials/header'); %>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-        
-        <!-- Header -->
-        <header class="mdl-layout__header mdl-layout__header--transparent ">
-            <div class="mdl-layout__header-row mdl-color-text--grey-700">
-                <span class="mdl-layout-title">
-                    <a href="/"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></a>
-                </span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation -->
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="javascript:void(0)" id="sign-in-button">
-                        <i class="material-icons">account_circle</i> <span id="account">Sign In</span>
-                    </a>
-                    <a class="mdl-navigation__link" href="javascript:void(0)" id="account-menu-button">
-                    </a>
-                    <a class="mdl-navigation__link" href="javascript:void(0)" id="help-button">
-                        <i class="material-icons">help</i> <span id="help">Help</span>
-                    </a>
-                </nav>
-            </div>
-        </header>
-        
-        <!-- Side Drawer -->
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></span>
-            <div class="drawer-separator"></div>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="/public"><i class="material-icons">lock_open</i> Public</a>
-                <a class="mdl-navigation__link" href="/help"><i class="material-icons">help_outline</i> Help</a>
-            </nav>
-        </div>
-            
+          
         <!--Main Page -->
         <main class="mdl-layout__content page-content">
             
@@ -146,30 +113,4 @@
             
         </main>
             
-        <!--Main Page Footer Section -->
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">
-                    More Information
-                </div>
-                <ul class="mdl-mini-footer__link-list">
-                    <li><a href="https://firebase.google.com/docs/auth/">Firebase Authentication</a></li>
-                    <li><a href="https://firebase.google.com/docs/reference/js/index-all">Firebase Web Reference Index</a></li>
-                </ul>
-            </div>
-        </footer>
-        
-    </div>
-
-    <!--Toast Messages Markup -->
-    <div id="toast" class="mdl-js-snackbar mdl-snackbar">
-        <div class="mdl-snackbar__text"></div>
-        <button class="mdl-snackbar__action" type="button"></button>
-    </div>
-                
-    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script src="/public/scripts/app.js"></script>
-</body>
-
-</html>
+<%- include('partials/footer'); %>

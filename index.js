@@ -35,31 +35,50 @@ app.get('/', (request, response) => {
 app.get('/signin', (request, response) => {
   response.render('signin'); 
 });
+app.get('/food', (request, response) => {
+  response.render('food'); 
+});
+app.get('/housing', (request, response) => {
+  response.render('housing'); 
+});
+app.get('/transportation', (request, response) => {
+  response.render('transportation'); 
+});
+app.get('/employment', (request, response) => {
+  response.render('employment'); 
+});
+app.get('/education', (request, response) => {
+  response.render('education'); 
+});
+app.get('/healthcare', (request, response) => {
+  response.render('healthcare'); 
+});
+app.get('/community', (request, response) => {
+  response.render('community'); 
+});
+app.get('/children', (request, response) => {
+  response.render('children'); 
+});
+app.get('/legal', (request, response) => {
+  response.render('legal'); 
+});
+app.get('/for-volunteers', (request, response) => {
+  response.render('for-volunteers'); 
+});
+app.get('/help', (request, response) => {
+  response.render('help'); 
+});
+app.get('/public', (request, response) => {
+  response.render('public'); 
+});
 app.get('/favicon.ico', (request, response) => {
   response.sendStatus(200)
     .end();
 });
+
+
 app.post('/signInUser', function (req, res, next) {
-  var provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().signInWithPopup(provider).then(function(result) {
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = result.credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-    // ...
-  }).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // The email of the user's account used.
-    var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    // ...
-  });
-    res.sendStatus(200)
-    .end();
-  // res.render('index');
+
 });
 // Always send the index.html
 app.get('*', (request, response) => {

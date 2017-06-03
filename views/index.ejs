@@ -1,8 +1,77 @@
 <%- include('partials/header'); %>
-<header class="create">
-  <a href="/story" id="start-story" class="create__button">Do Something</a>
-  <a href="/signin" id="start-story" class="create__button">SignIn</a>
-  <h1 class="logo"><img src="/public/imgs/logo.png" width="250" height="65"></h1>
-</header>
+            
+        <!--Main Page -->
+        <main class="mdl-layout__content page-content">
+                
+            <!--Card Section -->
+            <section class="mdl-grid">
+                    
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                
+                <div class="mdl-card mdl-shadow--2dp mdl-cell" id="welcome-card">
+                    <div class="mdl-card__title">
+                        <h1 class="mdl-card__title-text mdl-color-text--white">Welcome</h1>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-typography--headline">
+                        <ul class="demo-list-three mdl-list">
+                            <li class="mdl-list__item mdl-list__item--three-line">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-avatar">public</i>
+                                    <span>Create Firebase Web Project</span>
+                                    <span class="mdl-list__item-text-body">
+                                        Setup a Firebase project.  Make note of your configuration parameters.
+                                    </span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content">
+                                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons mdl-color-text--orange-300">looks_one</i></a>
+                                </span>
+                            </li>
+                            <li class="mdl-list__item mdl-list__item--three-line">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons  mdl-list__item-avatar">fingerprint</i>
+                                    <span>Enable Authentication</span>
+                                        <span class="mdl-list__item-text-body">
+                                        Enable all 6 Methods of Authentication.  Follow the Firebase instructions.
+                                    </span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content">
+                                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons mdl-color-text--orange-300">looks_two</i></a>
+                                </span>
+                            </li>
+                            <li class="mdl-list__item mdl-list__item--three-line">
+                                <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons  mdl-list__item-avatar">http</i>
+                                    <span>Serve Website</span>
+                                    <span class="mdl-list__item-text-body">
+                                        Firebase hosting is free for testing.  I recommend Cloud9 IDE as your workspace.  It's also free.
+                                    </span>
+                                </span>
+                                <span class="mdl-list__item-secondary-content">
+                                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons mdl-color-text--orange-300">looks_3</i></a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border intro-card-actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://firebase.google.com/docs/auth/">
+                            Firebase Docs
+                        </a>
+                        <div class="mdl-layout-spacer"></div>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="/public">
+                            Public Page
+                        </a>
+                    </div>
+                </div>
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                    
+            <!--/Card Section -->
+            </section>
+            
+            <p class="text-center license">Copyright &#169; 2016 <a class="mdl-color-text--grey-600" href="javascript:void(0)" onclick="window.open('https://rack.pub', 'newwindow', 'width=800, height=400'); return false;">Ron Royston</a>, MIT License</p>
+            
+        </main>
+            
 <%- include('partials/footer'); %>
 

@@ -23,3 +23,36 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            
+        <!-- Header -->
+        <header class="mdl-layout__header mdl-layout__header--transparent ">
+            <div class="mdl-layout__header-row mdl-color-text--grey-700">
+                <span class="mdl-layout-title">
+            <a href="/"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></a>
+          </span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/signin" id="sign-in-button">
+                        <i class="material-icons">account_circle</i> <span id="account">Sign In</span>
+                    </a>
+                    <a class="mdl-navigation__link" href="javascript:void(0)" id="account-menu-button">
+                    </a>
+                    <a class="mdl-navigation__link" href="javascript:void(0)" id="help-button">
+                        <i class="material-icons">help</i> <span id="help">Help</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+            
+        <!-- Side Drawer -->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></span>
+            <div class="drawer-separator"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/public"><i class="material-icons">lock_open</i> Public</a>
+                <a class="mdl-navigation__link" href="/help"><i class="material-icons">help_outline</i> Help</a>
+            </nav>
+        </div>

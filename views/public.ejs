@@ -1,0 +1,45 @@
+<%- include('partials/header'); %>
+       
+        <!--Main Page -->
+        <main class="mdl-layout__content page-content">
+            
+            <!--Card Section -->
+            <section class="mdl-grid">
+                
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                    
+                <div class="mdl-card mdl-shadow--2dp mdl-cell" id="public-card">
+                    <div class="mdl-card__title">
+                        <h1 class="mdl-card__title-text mdl-color-text--white">Public</h1>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-typography--headline">
+                        <p>This is a public page and is viewable by anyone. It is served from the
+                            <a class="mdl-color-text--grey-600" href="#" onclick="window.open('https://firebase.google.com/docs/hosting/', 'newwindow', 'width=800, height=400'); return false;">
+                            Firebase Hosting Global CDN<i class="material-icons oin">open_in_new</i></a>. The contents of this page are replicated all over the world for a fast viewing experience.
+                        </p>
+                        <p>This working demo give you a head start with Firebase user authentication. After getting this code working with your Firebase account you can begin building your secure app.
+                        </p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border intro-card-actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/">
+                            Home
+                        </a>
+                        <div class="mdl-layout-spacer"></div>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="private-page-button" disabled>
+                            Private Page
+                        </button>
+                    </div>
+                </div>
+                    
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                
+            <!--/Card Section -->
+            </section>
+            
+            <p class="text-center license">Copyright &#169; 2016 <a class="mdl-color-text--grey-600" href="javascript:void(0)" onclick="window.open('https://rack.pub', 'newwindow', 'width=800, height=400'); return false;">Ron Royston</a>, MIT License</p>
+            
+        </main>
+
+<%- include('partials/footer'); %>

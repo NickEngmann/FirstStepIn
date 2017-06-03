@@ -1,0 +1,56 @@
+<%- include('partials/header'); %>
+
+        <!--Main Page -->
+        <main class="mdl-layout__content page-content">
+                
+            <!--Card Section -->
+            <section class="mdl-grid">
+                    
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                    
+                <!-- Account Card -->
+                <div class="mdl-card mdl-shadow--2dp mdl-cell" id="account-card">
+                    <div class="mdl-card__title">
+                        <h1 class="mdl-card__title-text mdl-color-text--white">My Account</h1>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-typography--headline text-center">
+                        <p class="text-left">
+                            All members have a unique identifier called a UID. Developers will typically create a users node in the Realtime Database and populate it with the UID's of each member. Data specific to a user can then be stored and queried.
+                        </p>
+                        <!--Only password based members see this -->
+                        <div class="text-center" id="pwd-users-only-div">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="new-email-input-mdl-textfield">
+                                <input class="mdl-textfield__input mdl-color-text--orange-500" type="text" id="new-email-input">
+                                <label class="mdl-textfield__label" for="unew-email-input">New Email Address</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="new-email-submit-button" disabled>
+                                Submit
+                            </button>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="new-password-submit-button">
+                                Reset Password
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border intro-card-actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/">
+                            Home
+                        </a>
+                        <div class="mdl-layout-spacer"></div>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="delete-account-button" disabled>
+                            <i class="material-icons align">delete</i> Delete Account
+                        </button>
+                    </div>
+                </div>
+                    
+                <!-- Center Card -->
+                <div class="mdl-layout-spacer"></div>
+                    
+            <!--/Card Section -->
+            </section>
+            
+            <p class="text-center license">Copyright &#169; 2016 <a class="mdl-color-text--grey-600" href="javascript:void(0)" onclick="window.open('https://rack.pub', 'newwindow', 'width=800, height=400'); return false;">Ron Royston</a>, MIT License</p>
+            
+        </main>
+
+<%- include('partials/footer'); %>
