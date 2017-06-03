@@ -1,0 +1,207 @@
+*{
+  font-family: Roboto;
+  font-weight: lighter;
+}
+
+#header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+#title-header{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+#categories-header{
+  width: 100%;
+  height: 140px;
+  background-color: #005571;
+}
+
+#title-header-content{
+}
+
+#logo-div, #title-div, #search-div{
+  position: absolute;
+  display: inline-block;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#logo-div{
+  margin-left: 30px;
+}
+
+#logo{
+  height: 50px;
+  width: auto;
+  margin-top: -8;
+}
+
+#title-div{
+  margin-left: 100px;
+}
+
+#title{
+  font-family: Roboto;
+  font-weight: lighter;
+  margin-top: 0px;
+  color: black;
+  font-size: 30px;
+}
+
+#search-div{
+  text-align: right;
+  right: 30px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/search.png');
+    background-size: 20px;
+    background-position: 12px 5px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+#categories-table{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.category-box{
+  display: inline-block;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.category-icon{
+  height: 44px;
+  width: auto;
+}
+
+.category-text-div{
+  margin-top: 8px;
+}
+
+.category-text{
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#greeter{
+  position: absolute;
+  left:0;
+  right: 0;
+  margin-top: 200px;
+  width: 100%;
+  height: 650px;
+  background-color: #ff3333;
+  text-align: center;
+}
+
+#greeter-content{
+  margin-top: 140px;
+}
+
+#greeter-text{
+  font-family: 'Yellowtail', cursive;
+  color: white;
+  font-size: 120px;
+}
+
+#language-select-div{
+  margin-top: -20px;
+}
+
+#language-select{
+  font-size: 20px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: #ff3333;
+  background-image: url('images/arrows.png');
+  background-size: 15px;
+  background-position: 260px 13px;
+  background-repeat: no-repeat;
+  border: solid white 3px;
+  border-radius: 35px;
+  width: 300px;
+  height: 60px;
+  padding: 15px;
+
+  color: white;
+  font-weight: normal;
+}
+
+#calendar-twitter-div{
+    position: absolute;
+    margin-top: 850px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    height: 800px;
+}
+
+#small-calendar-div, #twitter-div{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+#small-calendar-div{
+  background-color: #f9b230;
+}
+
+#small-calendar-div-content, #twitter-div-content{
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+#small-calendar-text, #twitter-text{
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#small-calendar{
+  position: absolute;
+  border-width: 0;
+  width: 600;
+  height: 600;
+}
+
+#calendar-container{
+  width: 810px;
+}
+
+#twitter-div{
+  margin-left: 50%;
+  background-color: #005571;
+}
+
+#footer{
+  position: absolute;
+  margin-top: 1650px;
+  background-color: black;
+  width: 100%;
+  right: 0;
+  left: 0;
+  height: 200px;
+}
