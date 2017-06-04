@@ -11,4 +11,4 @@ First Step In is a website to help new immigrants get set up in : <h1>Austin Tex
 ~~~cd /FirstStepin ~~~ </br>
 5) ~~~npm install ~~~</br>
 6) ~~~npm start~~~ </br>
-7) Open up a web browser and go to <a href="http://localhost:3000">http://localhost:3000</a>
+7) Open up a web browser and go to [http://localhost:3000](http://localhost:3000)
