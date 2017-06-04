@@ -1,5 +1,9 @@
 *{
+<<<<<<< HEAD
+  font-family: Roboto;
+=======
   font-family: 'Open Sans';
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
   font-weight: lighter;
 }
 
@@ -10,6 +14,8 @@
   width: 100%;
   height: auto;
 }
+<<<<<<< HEAD
+=======
 .signin {
 /*    position: absolute;*/
     left: 0;
@@ -19,13 +25,17 @@
   position: relative;
   width: 50%;
 }
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 
 #title-header{
   width: 100%;
   height: 60px;
   background-color: white;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 #username-input{
     border: none;
     border-bottom: 1px solid rgba(0,0,0,.12);
@@ -52,8 +62,13 @@
 }
 #categories-header{
   width: 100%;
+<<<<<<< HEAD
+  height: 140px;
+  background-color: #005571;
+=======
   height: 100px;
   background-color: #119280;
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 }
 
 #title-header-content{
@@ -81,7 +96,11 @@
 }
 
 #title{
+<<<<<<< HEAD
+  font-family: Roboto;
+=======
   font-family: 'Open Sans';
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
   font-weight: lighter;
   margin-top: 0px;
   color: black;
@@ -89,6 +108,49 @@
 }
 
 #search-div{
+<<<<<<< HEAD
+  text-align: left;
+  width: 400px;
+  margin: auto;
+}
+
+.cse .gsc-search-button input.gsc-input, input.gsc-input{
+  background-color: white !important;
+  border: none !important;
+}
+
+.cse .gsc-search-box, .gsc-search-box{
+  background-color: white !important;
+  border: 5px solid white !important;
+  border-radius: 35px !important;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.gsc-input-box{
+  border: none !important;
+}
+
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus{
+  border: none !important;
+  background-color: transparent !important;
+  background-image: url('/public/images/search.png') !important;
+  background-position: 10px 0px !important;
+  background-repeat: no-repeat !important;
+  background-size: 25px !important;
+
+}
+
+#gs_tti50{
+}
+
+#gs_tti50 input{
+  background-image: none !important;
+  text-align: left !important;
+=======
   text-align: right;
   right: 25%;
   top: 60%;
@@ -108,13 +170,17 @@ input[type=text] {
     background-position: 12px 5px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 }
 
 #categories-table{
   text-align: center;
   margin: auto;
   width: 100%;
+<<<<<<< HEAD
+=======
   height: 100px
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 }
 
 .category-box{
@@ -122,7 +188,11 @@ input[type=text] {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
+<<<<<<< HEAD
+  margin-top: 40px;
+=======
   margin-top: 12px;
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 }
 
 .category-icon{
@@ -139,6 +209,8 @@ input[type=text] {
   font-size: 12px;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
+=======
  #header-image{
     background-image: url(/public/imgs/Refugee.jpg);
     width: 100%;
@@ -147,39 +219,36 @@ input[type=text] {
     padding-top: 380px;
     margin-top: 160px;
  }
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
 
 #greeter{
   position: absolute;
   left:0;
   right: 0;
+<<<<<<< HEAD
+  margin-top: 200px;
+  width: 100%;
+  height: 650px;
+  background-color: #ff3333;
+=======
   width: 100%;
   height: 332px;
   background-color: #E8701B;
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
   text-align: center;
 }
 
 #greeter-content{
-  margin: 30px auto 0 auto;
-
+<<<<<<< HEAD
+  margin-top: 140px;
 }
 
 #greeter-text{
-  font-family: 'Gentium Basic', serif;
+  font-family: 'Yellowtail', cursive;
   color: white;
-  font-size: 62px;
-  line-height: 40px;
-
+  font-size: 120px;
 }
 
-#greeter-sub{
-  margin: 0 auto;
-  width: 700px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 20px;
-  line-height: 32px;
-
-}
 #language-select-div{
   width: 150px;
   height: 64px;
@@ -228,6 +297,48 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
   margin: 30px auto 0 auto;
 
 }
+
+#greeter-text{
+  font-family: 'Gentium Basic', serif;
+  color: white;
+  font-size: 62px;
+  line-height: 40px;
+
+}
+
+#greeter-sub{
+  margin: 0 auto;
+  width: 700px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+
+}
+#language-select-div{
+  margin-top: -20px;
+}
+
+#language-select{
+  font-size: 20px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: #ff3333;
+  background-image: url('images/arrows.png');
+  background-size: 15px;
+  background-position: 260px 13px;
+  background-repeat: no-repeat;
+  border: solid white 3px;
+  border-radius: 35px;
+  width: 300px;
+  height: 60px;
+  padding: 15px;
+
+  color: white;
+  font-weight: normal;
+>>>>>>> bcfc7317780210edf77cb3ea8c0e26d9543485ac
+}
+
 #calendar-twitter-div{
     position: absolute;
     margin-top: 850px;
@@ -295,46 +406,7 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
   color: white;
   text-align: center;
 }
-.cse .gsc-search-button input.gsc-input, input.gsc-input{
-  background-color: white !important;
-  border: none !important;
-}
 
-.cse .gsc-search-box, .gsc-search-box{
-  background-color: white !important;
-  border: 5px solid white !important;
-  border-radius: 35px !important;
-}
-
-.cse .gsc-control-cse, .gsc-control-cse{
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.gsc-input-box{
-  border: none !important;
-}
-
-input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus{
-  border: none !important;
-  background-color: transparent !important;
-  background-image: url('/public/images/search.png') !important;
-  background-position: 10px 0px !important;
-  background-repeat: no-repeat !important;
-  background-size: 25px !important;
-
-}
-
-#gs_tti50{
-}
-
-#gs_tti50 input{
-  background-image: none !important;
-  text-align: left !important;
-  text-align: right;
-  right: 25%;
-  top: 60%;
-}
 /* Oh my god I'm so sorry */
 .goog-te-gadget img {
     vertical-align: middle;
