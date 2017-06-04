@@ -1,5 +1,5 @@
 <%- include('partials/header'); %>
-            
+        
               
 			<div id = "greeter">
 				<div id = "greeter-content">
@@ -41,6 +41,13 @@
 				</div>
 			</div>
 
+            <div id="google_translate_element"></div>
+			<script type="text/javascript">
+			    function googleTranslateElementInit() {
+			        new google.translate.TranslateElement({pageLanguage: ['en', 'en-us'], autoDisplay: false, multilanguagePage: true, gaTrack: true, gaId: 'UA-403844-8'}, 'google_translate_element');
+			    }
+			</script>
+			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             
 <%- include('partials/footer'); %>
 
