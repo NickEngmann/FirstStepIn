@@ -105,7 +105,9 @@ input[type=text] {
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
-
+.goog-te-gadget img {
+  display: none;
+}
 #categories-table{
   text-align: center;
   margin: auto;
@@ -223,7 +225,6 @@ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span
 
 .goog-te-menu-value span:nth-child(5){
   display: none;
-=======
   margin: 30px auto 0 auto;
 
 }
