@@ -1,17 +1,18 @@
 <%- include('partials/header'); %>
-        
-              
+            <script type="text/javascript" src="../client/public/scripts/stylinggt.js"></script>
 			<div id = "greeter">
 				<div id = "greeter-content">
 					<div id = "greeter-text-div">
 						<h1 id = "greeter-text">Welcome to Austin!</h1>
 					</div>
-					<div id = "language-select-div">
-						<select id = "language-select">
-							<option value = "language1">Language 1</option>
-							<option value = "language2">Language 2</option>
-							<option value = "language3">Language 3</option>
-						</select>
+					<div id = "language-select-div" style="">
+						<div id="google_translate_element"></div>						
+						<script type="text/javascript">
+						function googleTranslateElementInit() {
+						  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+						}
+						</script>
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					</div>
 				</div>
 			</div>
@@ -40,19 +41,11 @@
 					</div>
 				</div>
 			</div>
-
-            <div id="google_translate_element"></div>
-			<script type="text/javascript">
-			    function googleTranslateElementInit() {
-			        new google.translate.TranslateElement({pageLanguage: ['en', 'en-us'], autoDisplay: false, multilanguagePage: true, gaTrack: true, gaId: 'UA-403844-8'}, 'google_translate_element');
-			    }
-			</script>
-			<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             
 			<div id="footer">
-				<p id="info">2017 @ FirstStepIn.info</p>
+				<p>2017 @ FirstStepIn.info</p>
 			</div>
-			<script>document.getElementById("info").style.textAlign = "center";</script>
+			<script>document.getElementById("myP").style.textAlign = "center";
 
 <%- include('partials/footer'); %>
 

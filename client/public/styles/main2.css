@@ -241,8 +241,11 @@ input[type=text] {
   text-align: center;
 }
 
-#___gcse_0{
-  width: 400px;
+/* Oh my god I'm so sorry */
+.goog-te-gadget img {
+    vertical-align: middle;
+    border: none;
+    display: none;
 }
 .cse .gsc-control-cse, .gsc-control-cse {
     background-color: transparent;
