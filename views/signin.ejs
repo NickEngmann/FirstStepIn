@@ -5,42 +5,42 @@
         <main class="mdl-layout__content page-content">
             
             <!--Card Section -->
-            <section class="mdl-grid">
+            <section class="mdl-grid" style="padding-bottom: 600px;margin-top: 200px;background-image: url('/public/images/SignIn.jpg');background-repeat: no-repeat; background-size: cover;" >
                 
                 <!-- Center Card -->
                 <div class="mdl-layout-spacer"></div>
-                  
-                <!-- Login Card -->
-                <div class="login-card mdl-card mdl-shadow--2dp mdl-cell" id="login-card">
-                    <div class="mdl-card__supporting-text mdl-typography--headline text-center">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="facebook-button">
-                                <img src="/public/imgs/facebook-box.png" alt="facebook icon" class="social-icon"> <span class="opacity4">facebook</span>
-                              </button>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="google-button">
-                                <img src="/public/imgs/google-plus-box.png" alt="google icon" class="social-icon"> <span class="opacity4">google</span>
-                              </button>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="twitter-button">
-                                <img src="/public/imgs/twitter-box.png" alt="twitter icon" class="social-icon"> <span class="opacity4">twitter</span>
-                              </button>
-                        <div class="text-center">- or -</div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input mdl-color-text--orange-500 custom-text" type="text" id="username-input">
-                            <label class="mdl-textfield__label" for="username-input">Username</label>
+                <div class="signin">
+                    <!-- Login Card -->
+                    <div class="login-card mdl-card mdl-shadow--2dp mdl-cell" id="login-card">
+                        <div class="mdl-card__supporting-text mdl-typography--headline text-center">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="facebook-button">
+                                    <img src="/public/imgs/facebook-box.png" alt="facebook icon" class="social-icon"> <span class="opacity4">facebook</span>
+                                  </button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="google-button">
+                                    <img src="/public/imgs/google-plus-box.png" alt="google icon" class="social-icon"> <span class="opacity4">google</span>
+                                  </button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect oauth-login-button" id="twitter-button">
+                                    <img src="/public/imgs/twitter-box.png" alt="twitter icon" class="social-icon"> <span class="opacity4">twitter</span>
+                                  </button>
+                            <div class="text-center">- or -</div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input mdl-color-text--orange-500 custom-text" type="text" id="username-input">
+                                <label class="mdl-textfield__label" for="username-input">Username</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="password-input-mdl-textfield">
+                                <input class="mdl-textfield__input mdl-color-text--orange-500" type="password" id="password-input">
+                                <label class="mdl-textfield__label" for="password-input">Password</label>
+                            </div>
                         </div>
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="password-input-mdl-textfield">
-                            <input class="mdl-textfield__input mdl-color-text--orange-500" type="password" id="password-input">
-                            <label class="mdl-textfield__label" for="password-input">Password</label>
+                        <div class="mdl-card__actions mdl-card--border intro-card-actions">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="register-button">
+                                    Register
+                                  </a>
+                            <div class="mdl-layout-spacer"></div>
+                            <button class="mdl-button mdl-button--colored" id="login-button" disabled>Login</button>
                         </div>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border intro-card-actions">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="register-button">
-                                Register
-                              </a>
-                        <div class="mdl-layout-spacer"></div>
-                        <button class="mdl-button mdl-button--colored" id="login-button" disabled>Login</button>
                     </div>
                 </div>
-                
                 <!-- Register Card -->
                 <div class="login-card mdl-card mdl-shadow--2dp mdl-cell" id="register-card">
                     <!--div class="mdl-card__title">

@@ -1,7 +1,5 @@
 /*
- Firebase Authentication Working Example, JavaScript, CSS, and HTML crafted with love and lots of coffee.
- (c) 2016, Ron Royston, MIT License
- https://rack.pub
+ Firebase Authentication Working
  
  1. ..................................................................INITIALIZE
     FIREBASE CONFIG
@@ -227,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if(loginCard && logoutCard && noticeCard){
               loginCard.style.display = "none";
               logoutCard.style.display = "none";
-              noticeCard.style.display = "inline";              
+              noticeCard.style.display = "table-cell";              
             }
             
             //kick unvalidated users to the login page
@@ -308,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
       removePrivateLinkFromDrawer();
       
       if(loginCard && logoutCard && noticeCard){
-        loginCard.style.display = "inline";
+        loginCard.style.display = "table-cell";
         logoutCard.style.display = "none";
         noticeCard.style.display = "none";         
       }
