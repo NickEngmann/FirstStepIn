@@ -10,13 +10,26 @@
     <title>First Step In</title>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles/main.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/styles/main2.css" />
+    <link rel="stylesheet" type="text/css" href="/public/styles/dropdown.css" />
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+<!--     <script src = "/public/scripts/script.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js"></script>
   	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-auth.js"></script>
   	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script>
   	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-messaging.js"></script>
+    <link href='/public/scripts/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='/public/scripts/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='/public/scripts/fullcalendar/lib/moment.min.js'></script>
+    <script src='/public/scripts/fullcalendar/lib/jquery.min.js'></script>
+    <script src='/public/scripts/fullcalendar/fullcalendar.min.js'></script>
+    <script src='/public/scripts/fullcalendar/gcal.min.js'></script>
     <!-- Minimize the number of CSS files for performance -->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/main2.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,100,300,700italic,500,500italic,400italic,300italic,100italic|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-amber.min.css" />
@@ -29,10 +42,14 @@
         <header class="mdl-layout__header mdl-layout__header--transparent ">
             <div class="mdl-layout__header-row mdl-color-text--grey-700">
                 <span class="mdl-layout-title">
-            <a href="/"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></a>
+            <a href="/"><img src="/public/images/dummy-logo.png"" alt="logo" height="48"></a>
           </span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
+                <!--Search-->
+                <div id = "search-div">
+                    <input id = "search-bar" type="text" name="search" placeholder="Search..">
+                </div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="/signin" id="sign-in-button">
@@ -45,8 +62,192 @@
                     </a>
                 </nav>
             </div>
+
         </header>
-            
+        <div id = "categories-header">
+            <div id = "categories-header-content">
+                <div id = "categories-table">
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/community.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Community</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/money.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Money</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/food.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Food</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/house.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Housing</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/healthcare.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Healthcare</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/employment.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Employment</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/education.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Education</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/children.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Children</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/transportation.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Transportation</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/legal.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Legal</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class = "category-box">
+                            <div class = "category-icon-div">
+                                <img class = "category-icon" src = "/public/images/icons/volunteer.png">
+                            </div>
+                            <div class = "category-text-div">
+                                <p class = "category-text">Volunteers</p>
+                            </div>
+                        </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>            
         <!-- Side Drawer -->
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title"><img src="/public/imgs/firebase-logo.png" alt="logo" height="48"></span>

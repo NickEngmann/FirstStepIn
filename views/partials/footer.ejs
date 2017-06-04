@@ -1,15 +1,3 @@
-        <!--Main Page Footer Section -->
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">
-                    More Information
-                </div>
-                <ul class="mdl-mini-footer__link-list">
-                    <li><a href="https://firebase.google.com/docs/auth/">Firebase Authentication</a></li>
-                    <li><a href="https://firebase.google.com/docs/reference/js/index-all">Firebase Web Reference Index</a></li>
-                </ul>
-            </div>
-        </footer>
         
     </div>
     
@@ -36,6 +24,15 @@
     <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <script src="/public/scripts/app.js"></script>
+    <script type='text/javascript'>
+    $('#fullcalendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyCZ6rmPq93DjrPafTaWayIq-adXR2QtLlg',
+        events: {
+            googleCalendarId: 'i3f0s63blgp7rajb1081p2fvms@group.calendar.google.com'
+        }
+    });
+    $('#fullcalendar').fullCalendar('render');
+    </script>
 </body>
 
 </html>

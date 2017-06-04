@@ -57,7 +57,8 @@
 
 #search-div{
   text-align: right;
-  right: 30px;
+  right: 17%;
+  top: -.05%;
 }
 
 input[type=text] {
@@ -164,20 +165,26 @@ input[type=text] {
   width: 50%;
   display: inline-block;
 }
-
+.twitter-iframe-reference{
+    display: table;
+    margin: 0 auto;
+}
 #small-calendar-div{
   background-color: #f9b230;
 }
 
 #small-calendar-div-content, #twitter-div-content{
-  margin-left: 30px;
-  margin-top: 40px;
+    display: table;
+    margin: 0 auto;
 }
 
 #small-calendar-text, #twitter-text{
-  color: white;
-  font-size: 40px;
-  font-weight: normal;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+    margin: auto;
+    display: table;
+    margin: 0 auto;
 }
 
 #small-calendar{
@@ -188,7 +195,8 @@ input[type=text] {
 }
 
 #calendar-container{
-  width: 810px;
+  width: 80%;
+  margin: auto;
 }
 
 #twitter-div{
