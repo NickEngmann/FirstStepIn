@@ -68,8 +68,8 @@ app.get('/for-volunteers', (request, response) => {
 app.get('/help', (request, response) => {
   response.render('help'); 
 });
-app.get('/public', (request, response) => {
-  response.render('public'); 
+app.get('/account', (request, response) => {
+  response.render('account'); 
 });
 app.get('/favicon.ico', (request, response) => {
   response.sendStatus(200)
