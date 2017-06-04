@@ -217,3 +217,10 @@ input[type=text] {
   color: white;
   text-align: center;
 }
+
+/* Oh my god I'm so sorry */
+.goog-te-gadget img {
+    vertical-align: middle;
+    border: none;
+    display: none;
+}
