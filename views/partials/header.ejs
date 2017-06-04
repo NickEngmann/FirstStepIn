@@ -48,7 +48,19 @@
                 <div class="mdl-layout-spacer"></div>
                 <!--Search-->
                 <div id = "search-div">
-                    <input id = "search-bar" type="text" name="search" placeholder="Search..">
+                    <script>
+                      (function() {
+                        var cx = '002457898823174146598:b4zlopgxsqk';
+                        var gcse = document.createElement('script');
+                        gcse.setAttribute("id","search-bar");
+;                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
                 </div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
