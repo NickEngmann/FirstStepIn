@@ -8,19 +8,35 @@
 <head>
     <!-- // maps key : AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA -->
     <script src="sheetrock.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA&libraries=places"></script>
+    <script src="angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA&libraries=places"></script> -->
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <script src="https://fb.me/react-0.13.3.js"></script>
 </head>
 
 <body>
     <p> Hi, how are you ? </p>
     <iframe width="400" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvQk0B3a1RIYRWCvtj7ldkLk&key=AIzaSyDdkO3Rp47s2wXOYMKUSv3x6hI3O07PdRA" allowfullscreen> </iframe>
+    <div id="listings"></div>
 </body>
 <script>
 
+var cache = {}
+var filtered_data = null;
+
  function pullFromTable(doc_url, requirements){
 
-    var filtered_data = null;
     var done = false;
+     /* */
+     /* if(doc_url in Object.keys(cache)){*/
+     /* return cache[doc_url];*/
+     /* }*/
+     /* else{*/
+     /* cache[doc_url] = filtered_data;*/
+     /* return cache[doc_url];*/
+     /* }*/
+
 
     sheetrock({
         url: doc_url,
@@ -77,9 +93,11 @@
             filtered_data.clean(null);
             //remove the first element because it's just a bunch of names instead of data. 
             filtered_data.shift();
+            console.log(filtered_data);
 
             //do something with filtered data.
-            //hackathons let you commit crimes - (past)Oliver Croomes
+            // hackathons let you commit crimes - (past)Oliver Croomes
+            // this code is a crime.
             /* console.log('filtered_data');*/
             /* console.log(filtered_data);*/
             done = true;
@@ -87,13 +105,48 @@
         }
 
     }
-
-    return filtered_data;
+    //end function
 }
 
-var ourData = pullFromTable('https://docs.google.com/spreadsheets/d/18C24pEmFTz9JhIX_8UUhHEb5GenBPtrW_6WPMP_muzM/edit#gid=0',[]);
-console.log('Functino call results');
-console.log(ourData);
+pullFromTable('https://docs.google.com/spreadsheets/d/18C24pEmFTz9JhIX_8UUhHEb5GenBPtrW_6WPMP_muzM/edit#gid=0',[]);
+setTimeout(function(){
+    console.log('Global filtered results');
+    console.log(filtered_data);
+ },1000);
 </script>
+
+<script type="text/jsx">
+    console.log('hi there');
+        var MapCard = React.createClass({
+            render: function() {
+                return (<div class="card">
+                    <div class="content">
+                        <h2>{this.props.Name}</h2>
+                        <p><i class="material-icons">Address_on</i>{this.props.Address}</p>
+                        <a href="{this.props.URL}">Click Here to go to the Website</a>
+                        <p id="small">Categories</p>
+                        <div class="tags"></div>
+                    </div>
+                    <div class="map">
+                    </div>
+                </div>);
+            }
+        });
+
+
+        setTimeout(function(){
+            var allcards = false;
+            var d = new Date();
+            allcards = filtered_data.map(function(data,index){ return (<MapCard {...data } key={'' + index}></MapCard>); });
+            allcards.push()
+
+            console.log('all cards');
+            console.log(allcards);
+
+                React.render((<div>{allcards}</div>), document.getElementById('listings'));
+
+        },2000);
+</script>
+
 
 </html>
