@@ -16,7 +16,30 @@
   height: 60px;
   background-color: white;
 }
-
+#username-input{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+}
+#display-name{
+  border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+}
 #categories-header{
   width: 100%;
   height: 140px;
@@ -57,7 +80,8 @@
 
 #search-div{
   text-align: right;
-  right: 30px;
+  right: 17%;
+  top: -.05%;
 }
 
 input[type=text] {
@@ -164,20 +188,26 @@ input[type=text] {
   width: 50%;
   display: inline-block;
 }
-
+.twitter-iframe-reference{
+    display: table;
+    margin: 0 auto;
+}
 #small-calendar-div{
   background-color: #f9b230;
 }
 
 #small-calendar-div-content, #twitter-div-content{
-  margin-left: 30px;
-  margin-top: 40px;
+    display: table;
+    margin: 0 auto;
 }
 
 #small-calendar-text, #twitter-text{
-  color: white;
-  font-size: 40px;
-  font-weight: normal;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+    margin: auto;
+    display: table;
+    margin: 0 auto;
 }
 
 #small-calendar{
@@ -188,7 +218,8 @@ input[type=text] {
 }
 
 #calendar-container{
-  width: 810px;
+  width: 80%;
+  margin: auto;
 }
 
 #twitter-div{
@@ -203,5 +234,25 @@ input[type=text] {
   width: 100%;
   right: 0;
   left: 0;
-  height: 200px;
+  height: 100px;
+  font-family: Roboto;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+/* Oh my god I'm so sorry */
+.goog-te-gadget img {
+    vertical-align: middle;
+    border: none;
+    display: none;
+}
+.cse .gsc-control-cse, .gsc-control-cse {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.gsc-control-cse {
+    font-family: Arial, sans-serif;
+    border-color: transparent;
+    background-color: transparent;
 }
