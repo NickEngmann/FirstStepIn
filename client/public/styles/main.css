@@ -14,7 +14,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Droid Serif', georgia, times, serif;
+  font-family: 'Open Sans', sans-serif;
   color: #755c49;
 }
 p, h1, h2, h3, h4, h5, h6 {

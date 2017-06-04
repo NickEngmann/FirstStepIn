@@ -1,19 +1,39 @@
 <%- include('partials/header'); %>
             <script type="text/javascript" src="../client/public/scripts/stylinggt.js"></script>
-			<div id = "greeter">
+      <div id="header-image">
+      <div id = "greeter">
 				<div id = "greeter-content">
 					<div id = "greeter-text-div">
-						<h1 id = "greeter-text">Welcome to Austin!</h1>
-					</div>
-					<div id = "language-select-div" style="">
-						<div id="google_translate_element"></div>						
+						<h1 id = "greeter-text">Austin Welcomes Refugees</h1>
+            <p id = "greeter-sub">Find all the resources you need to settle into life in Austin, search or choose a category above to get started</p>
+
+            <!--Search-->
+            <div id = "search-div">
+                <script>
+                  (function() {
+                    var cx = '002457898823174146598:b4zlopgxsqk';
+                    var gcse = document.createElement('script');
+                    gcse.setAttribute("id","search-bar");
+;                       gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
+          </div>
+        </div>
+					<!-- <div id = "language-select-div" style="">
+						<div id="google_translate_element"></div>
 						<script type="text/javascript">
 						function googleTranslateElementInit() {
 						  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 						}
 						</script>
 						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -41,11 +61,10 @@
 					</div>
 				</div>
 			</div>
-            
+
 			<div id="footer">
 				<p>2017 @ FirstStepIn.info</p>
 			</div>
 			<script>document.getElementById("myP").style.textAlign = "center";
 
 <%- include('partials/footer'); %>
-
