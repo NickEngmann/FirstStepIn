@@ -224,3 +224,12 @@ input[type=text] {
     border: none;
     display: none;
 }
+.cse .gsc-control-cse, .gsc-control-cse {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.gsc-control-cse {
+    font-family: Arial, sans-serif;
+    border-color: transparent;
+    background-color: transparent;
+}
