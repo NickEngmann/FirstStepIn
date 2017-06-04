@@ -10,7 +10,11 @@
   width: 100%;
   height: auto;
 }
-
+.signin {
+/*    position: absolute;*/
+    left: 0;
+    right: 0;
+}
 #search-div{
   position: relative;
   width: 50%;

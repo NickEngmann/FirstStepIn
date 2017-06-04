@@ -1,7 +1,9 @@
  "use strict";
 //initialize firebase
 var firebase = require("firebase");
-//require('firebase/messaging');
+// require('firebase/messaging');
+// var admin = require("firebase-admin");
+// var serverKey = require("/public/que.json");
 
 var config = {
   apiKey: "AIzaSyCZ6rmPq93DjrPafTaWayIq-adXR2QtLlg",
@@ -13,7 +15,10 @@ var config = {
 };
 
 firebase.initializeApp(config);
-
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+//   databaseURL: "https://firststepin-1bd8e.firebaseio.com"
+// });
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
@@ -68,8 +73,8 @@ app.get('/for-volunteers', (request, response) => {
 app.get('/help', (request, response) => {
   response.render('help'); 
 });
-app.get('/public', (request, response) => {
-  response.render('public'); 
+app.get('/account', (request, response) => {
+  response.render('account'); 
 });
 app.get('/favicon.ico', (request, response) => {
   response.sendStatus(200)
