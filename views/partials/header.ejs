@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
 <!--     <script src = "/public/scripts/script.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/public/scripts/sheetrock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react.min.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <script src="https://fb.me/react-0.13.3.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js"></script>
   	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-auth.js"></script>
   	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script>
@@ -87,12 +91,12 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Social Groups</a>
-                            <a href="#">Mosques/Churches</a>
+                            <a href="/Groups">Social Groups</a>
+                            <a href="/Mosques%20And%20Churches">Mosques/Churches</a>
                             <a href="#">Social Workers/Agencies</a>
-                            <a href="#">Nonprofits</a>
+                            <a href="/Nonprofits">Nonprofits</a>
                             <a href="#">United Way's 2-1-1</a>
-                            <a href="#">Safety</a>
+                            <a href="/Safety">Safety</a>
                         </div>
                     </div>
 
@@ -106,15 +110,15 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Tips</a>
-                            <a href="#">Banks/ATMs</a>
-                            <a href="#">Building Credit</a>
-                            <a href="#">Financial Counseling</a>
-                            <a href="#">Budgeting</a>
-                            <a href="#">Checks/E-mail</a>
-                            <a href="#">Pocket Money</a>
-                            <a href="#">Documenting Expenses</a>
-                            <a href="#">Taxes</a>
+                            <a href="/Money%20Tips">Tips</a>
+                            <a href="/Banks%20and%20ATMs">Banks/ATMs</a>
+                            <a href="/Building%20Credit">Building Credit</a>
+                            <a href="/Financial%20Counseling">Financial Counseling</a>
+                            <a href="/Budgeting">Budgeting</a>
+                            <a href="/Checks%20And%20E-mail">Checks/E-mail</a>
+                            <a href="/Pocket%20Money">Pocket Money</a>
+                            <a href="/Documenting%20Expenses">Documenting Expenses</a>
+                            <a href="/Taxes">Taxes</a>
                         </div>
                     </div>
 
@@ -128,11 +132,11 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">SNAP</a>
-                            <a href="#">Food banks</a>
-                            <a href="#">International Markets</a>
-                            <a href="#">Farmers Markets</a>
-                            <a href="#">Tips</a>
+                            <a href="/SNAP">SNAP</a>
+                            <a href="/Food%20Banks">Food banks</a>
+                            <a href="/International%20Markets">International Markets</a>
+                            <a href="/Farmers%20Markets">Farmers Markets</a>
+                            <a href="/Food%20Tips">Tips</a>
                         </div>
                     </div>
 
@@ -146,12 +150,13 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Apartments</a>
-                            <a href="#">Disputes</a>
-                            <a href="#">Rent Assistance</a>
-                            <a href="#">Subsidized housing</a>
-                            <a href="#">Tips</a>
-                            <a href="#">General Living</a>
+
+                            <a href="/Apartments">Apartments</a>
+                            <a href="/Disputes">Disputes</a>
+                            <a href="/Rent%20Assistance">Rent Assistance</a>
+                            <a href="/Afforadable%20Housing">Subsidized housing</a>
+                            <a href="/Housing%20Tips">Tips</a>
+                            <a href="/General%20Living">General Living</a>
                         </div>
                     </div>
 
@@ -165,16 +170,16 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Clinics</a>
+                            <a href="/Clinics">Clinics</a>
                             <a href="#">Transportation to Medical Appointments</a>
-                            <a href="#">Translation Services</a>
-                            <a href="#">Health fairs</a>
-                            <a href="#">Online Resources</a>
-                            <a href="#">Insurance</a>
-                            <a href="#">Tips</a>
-                            <a href="#">Exercise</a>
-                            <a href="#">Nutrition</a>
-                            <a href="#">Hygiene</a>
+                            <a href="/Translation%20Services">Translation Services</a>
+                            <a href="/Health%20Fairs">Health fairs</a>
+                            <a href="/Online%20Resources">Online Resources</a>
+                            <a href="/Insurance">Insurance</a>
+                            <a href="/Healthcare%20Tips">Tips</a>
+                            <a href="/Exercise">Exercise</a>
+                            <a href="/Nutrition">Nutrition</a>
+                            <a href="/Hygiene">Hygiene</a>
                         </div>
                     </div>
 
@@ -188,11 +193,11 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Tips</a>
-                            <a href="#">Job Training</a>
-                            <a href="#">Small Business Training</a>
-                            <a href="#">Disputes/Discrimination</a>
-                            <a href="#">Sewing</a>
+                            <a href="/Employment%20Tips">Tips</a>
+                            <a href="/Job%20Training">Job Training</a>
+                            <a href="/Small%20Business%20Training">Small Business Training</a>
+                            <a href="/Disputes%20And%20Discrimination">Disputes/Discrimination</a>
+                            <a href="/Sewing">Sewing</a>
                         </div>
                     </div>
 
@@ -206,9 +211,9 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Local ESL resource</a>
-                            <a href="#">Online Resources</a>
-                            <a href="#">Where to find translators</a>
+                            <a href="/ESL%20Classes">Local ESL resource</a>
+                            <a href="/Online%20Resources">Online Resources</a>
+                            <a href="/Translators">Where to find translators</a>
                         </div>
                     </div>
 
@@ -222,12 +227,12 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">AISD</a>
+                            <a href="/AISD">AISD</a>
                             <a href="#">Summer and Holiday Break Camps</a>
-                            <a href="#">Swimming Lessons</a>
-                            <a href="#">Places to go</a>
-                            <a href="#">Parenting</a>
-                            <a href="#">Tips</a>
+                            <a href="/Swimming%20Lessons">Swimming Lessons</a>
+                            <a href="/Places%20to%20go">Places to go</a>
+                            <a href="/Parenting">Parenting</a>
+                            <a href="/Children%20Tips">Tips</a>
                         </div>
                     </div>
 
@@ -241,9 +246,9 @@
                             </div>
                         </div>
                         <div class="dropdown-content">
-                            <a href="#">Tips</a>
-                            <a href="#">Capital Metro</a>
-                            <a href="#">Cabs/Rideshare</a>
+                            <a href="/Transportation%20Tips">Tips</a>
+                            <a href="/Capital%20Metro">Capital Metro</a>
+                            <a href="/Cabs%20And%20Rideshare">Cabs/Rideshare</a>
                         </div>
                     </div>
 

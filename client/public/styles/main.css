@@ -339,3 +339,80 @@ label {
 #verify-password-div{
   display:none;
 }
+.listings {
+  display: flex;
+  position: fixed;
+
+}
+
+.listings p {
+  font-size: 16px;
+
+}
+
+.listings h2 {
+  font-size: 20px;
+}
+
+#listings {
+  background: white;
+  height: 320px;
+  width: 1000px;
+  border: 1px solid #D8D8D8;
+  margin-left: 8%;
+  display: flex;
+  align-items: stretch;
+}
+
+.tags {
+  margin: 20px 0 0 0;
+  display: flex;
+}
+
+
+#small{
+  padding: 40px 0 0 0;
+  font-size: 14px;
+  color: #5A6872;
+}
+
+.label {
+  font-size: 14px;
+  background-color: #A6D1FB;
+  height: 20px;
+  width: 60px;
+  border-radius: 20px;
+  padding: 8px 8px 8px 20px;
+  margin-right: 10px;
+
+}
+
+#material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding-right: 10px;
+}
+
+.map {
+  padding: 20px 0 0 0;
+}
+
+.content {
+  width: 480px;
+}
+#beginningCard{
+    margin-top: 177px;
+    width: 100%;
+    position: absolute;
+    margin-left: 12%;
+
+}
