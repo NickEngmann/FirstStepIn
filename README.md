@@ -3,7 +3,7 @@
 First Step In is a website to help new immigrants get set up in : Austin Texas.
 
 [![Landing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/firststepinlanding.png)]
-
+[![Founder](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/img1.png)]
 
 # How To Install First Step In to Run on Localhost 
 1) Clone/Download This Repo </br>
