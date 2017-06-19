@@ -2,8 +2,8 @@
 
 First Step In is a website to help new immigrants get set up in : Austin Texas.
 
-[![Landing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/firststepinlanding.png)]
-[![Founder](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/img1.png)]
+![Landing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/firststepinlanding.png)
+![Founder](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/img1.jpg)
 
 # How To Install First Step In to Run on Localhost 
 1) Clone/Download This Repo </br>
@@ -29,15 +29,15 @@ FirstStepIn is a dynamic site that uses Express for routing and utlizes React to
 
 ## Sheetrock
 For a thorough explaination of what Sheetrock is, please check out the official documentation <a href="https://chriszarate.github.io/sheetrock/"> here </a>. We use Sheetrock as our primary method to load in the information served on different pages. This is done by providing a google sheets Url to where the specific information is located.
-[![Google Sheets](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/googlesheets.png)]
+![Google Sheets](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/googlesheets.png)
 
 And then on a templating page we take that URL that we recieve through routing and dynamically create content based off contents of the google sheets
-[![Sheetrock](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/sheetrock.png)]
+![Sheetrock](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/sheetrock.png)
 
 ## Routing
 We use express for basic routing. This only gets a bit more difficult with the usage of sheetrock. In order to serve the correct URL/data to a page type you have to specify which links are routed where.
 
-[![Routing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/routing.png)]
+![Routing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/routing.png)
 
 If I have a page which I want formatted in the listings.ejs format, I would include its URL in the ListingNames object, and add it to the app.get(/:listing) string.
 
@@ -45,7 +45,7 @@ If I have a page which I want formatted in the listings.ejs format, I would incl
 Firebase is currently used for Twitter/Google/Facebook/Mail authentification. 
 To obtain access to the firebase database please e-mail me at <a href="cyengmann@gmail.com"> cyengmann@gmail.com </a>
 
-[![Landing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/firebase.png)]
+![Landing](https://github.com/NickEngmann/FirstStepIn/blob/master/imgs/firebase.png)
 
 # Copyright and Licensing
 The MIT License
