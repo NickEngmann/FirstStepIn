@@ -1,0 +1,7 @@
+{
+  "name": "firststepin",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/oliveratutexas/FirstStepInHeroku",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
